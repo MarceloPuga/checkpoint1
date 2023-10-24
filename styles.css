@@ -1,0 +1,155 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: #000000;
+    --secondaryColor: #0000FF;
+    --tertiaryColor: #DEB887;
+    --quaternaryColor: #FFF8DC;
+}
+header{
+
+    background-color: var(--tertiaryColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+}
+nav a{
+
+    text-decoration: none;
+    color: var(--primaryColor);
+    margin: 0rem 0.5rem;
+}
+
+nav a:hover{
+
+    background-color: var(--primaryColor);
+    color: var(--tertiaryColor);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+main{
+
+    min-height: 86vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--quaternaryColor);
+}
+
+article{
+    padding: 1rem 2rem;
+    background-color: var(--tertiaryColor);
+    width: 15vw;
+    height: 35vh;
+    border-radius: 2rem; 
+}
+article img{
+
+    width: 10vw;
+    height: 20vh;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    
+}
+.courses{
+
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    padding: 1rem;
+}
+.email{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.table-list{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+
+}
+
+tr,thead,td{
+
+    border: 2px solid rgb(226, 216, 216);
+    padding: 0.5rem;
+    
+}
+
+.list{
+
+    text-align: justify;
+    color: var(--secondaryColor);
+
+}
+.titlelist{
+
+    margin-bottom: 1rem;
+}
+
+
+footer{
+
+    height: 7vh;
+    background-color: var(--tertiaryColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a{
+
+    text-decoration: none;
+}
+
+@media only screen and (min-width:320px) and (max-width: 1023px){
+
+header{
+
+    flex-direction: column;
+    height: 10vh;
+}
+
+nav a{
+
+    flex-direction: column;
+}
+.courses{
+
+    flex-direction: column;
+}
+article img{
+
+    min-width: 35vw;
+}
+article{
+
+    min-width: 50vw;
+    margin-bottom: 0.5rem;
+    min-height: 38vh;
+}
+.table-list{
+
+    flex-direction: column;
+}
+footer{
+
+    flex-direction: column;
+    height: 12vh;
+}
+
+
+
+
+}
+
+
